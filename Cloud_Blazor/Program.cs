@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
+
 builder.Services.AddHttpClient("TestingRestAPI", client =>
 {
     client.BaseAddress = new Uri("https://localhost:7029/");
